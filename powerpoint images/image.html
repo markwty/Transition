@@ -1,0 +1,14 @@
+<img id="myimg" src="userimage.png" onload="resizeImg(this, 600, 800);">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            setInterval(function() {
+                $("#myimg").attr("src", "Slide0.JPG?" + new Date().getTime());
+            }, 1000);
+        });
+        function resizeImg(img, height, width) {
+			img.height = height;
+			img.width = width;
+		}
+    </script>
+ </img>

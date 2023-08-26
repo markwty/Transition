@@ -1,0 +1,3 @@
+Extension:.jpg,.png,
+Default images directory:C:\Users\mark\Desktop\Projects\Transition\powerpoint images,C:\Users\mark\Desktop\Projects\Export Slides\kelvin 29 dec,
+Height:150

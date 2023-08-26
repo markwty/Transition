@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="TransitionFrame">
+		<size>234,544</size>
+		<id_arg>0</id_arg>
+		<style>wxDEFAULT_FRAME_STYLE|wxMAXIMIZE_BOX</style>
+		<handler function="OnKeyDown" entry="EVT_KEY_DOWN" />
+		<object class="wxBitmapButton" name="ID_LEFTBTN" variable="LeftBtn" member="yes">
+			<bitmap stock_id="wxART_GO_BACK" stock_client="wxART_BUTTON" />
+			<pos>0,0</pos>
+			<enabled>0</enabled>
+			<handler function="OnLeftBtnClick" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxBitmapButton" name="ID_RIGHTBTN" variable="RightBtn" member="yes">
+			<bitmap stock_id="wxART_GO_FORWARD" />
+			<pos>24,0</pos>
+			<enabled>0</enabled>
+			<handler function="OnRightBtnClick" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxTextCtrl" name="ID_SLIDETEXTCTRL" variable="SlideTextCtrl" member="yes">
+			<pos>0,28</pos>
+			<size>70,20</size>
+			<enabled>0</enabled>
+			<style>wxTE_PROCESS_ENTER</style>
+			<handler function="OnSlideTextCtrlTextEnter" entry="EVT_TEXT_ENTER" />
+		</object>
+		<object class="wxButton" name="ID_BROWSEBTN" variable="BrowseBtn" member="yes">
+			<label>Browse</label>
+			<pos>0,48</pos>
+			<handler function="OnBrowseBtnClick" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxBitmapButton" name="ID_RESTARTBTN" variable="RestartBtn" member="yes">
+			<bitmap stock_id="wxART_REDO" />
+			<pos>48,0</pos>
+			<enabled>0</enabled>
+			<handler function="OnRestartBtnClick" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxButton" name="ID_REFRESHBUTTON" variable="RefreshButton" member="yes">
+			<label>Refresh</label>
+			<pos>76,48</pos>
+			<handler function="OnRefreshButtonClick" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxTextCtrl" name="ID_EXTENSIONTEXTCTRL" variable="ExtensionTextCtrl" member="yes">
+			<pos>151,48</pos>
+			<size>64,26</size>
+			<tooltip>Extension</tooltip>
+			<style>wxTE_PROCESS_ENTER</style>
+			<handler function="OnRefreshButtonClick" entry="EVT_TEXT_ENTER" />
+		</object>
+		<object class="wxNotebook" name="ID_MAINNOTEBOOK" variable="MainNotebook" member="yes">
+			<pos>0,108</pos>
+			<size>216,436</size>
+		</object>
+		<object class="wxTextCtrl" name="ID_SIZETEXTCTRL" variable="SizeTextCtrl" member="yes">
+			<value>100</value>
+			<pos>152,8</pos>
+			<size>64,30</size>
+			<tooltip>Zoom (%)</tooltip>
+			<style>wxTE_PROCESS_ENTER</style>
+			<handler function="OnSizeTextCtrlTextEnter" entry="EVT_TEXT_ENTER" />
+		</object>
+		<object class="wxButton" name="ID_ADDBTN" variable="AddBtn" member="yes">
+			<label>+</label>
+			<pos>0,80</pos>
+			<size>32,28</size>
+			<handler function="OnAddBtnClick" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxButton" name="ID_MINUSBTN" variable="MinusBtn" member="yes">
+			<label>-</label>
+			<pos>32,80</pos>
+			<size>32,28</size>
+			<handler function="OnMinusBtnClick" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxDirDialog" variable="dirDialog" member="yes">
+			<message>Select directory</message>
+		</object>
+	</object>
+</wxsmith>

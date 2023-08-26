@@ -1,0 +1,4 @@
+aaaa ICON "Transition.ico"
+app_logo ICON "Transition.ico"
+
+#include "wx/msw/wx.rc"
